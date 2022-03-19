@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300&display=swap');
+
+*{
+    -wibkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0;
+    /* font-family: cursive; */
+    font-family: 'Cairo', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 600px;
+    background-image: url(../imgs/image-1.png);
+    background-size: cover;
+    position: relative;
+}
+header::after{
+    content: "";
+    background-color: #E0A500;
+    width: 20%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+header .overly{
+    width: 100%;
+    height: 100%;
+    background: #00000080;
+    margin: 0;
+}
+
+header nav{
+    width: 95%;
+    margin:0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+header nav .navbar-brand {padding: 0px 25px ; margin: 0px;}
+header nav .navbar-brand img{
+    padding: 5px 0px;
+    width: 60px;
+}
+
+header nav .navbar-collapse {
+    justify-content: center;
+}
+header nav .navbar{padding: 0;}
+header nav ul {
+    /* height: 100%; */
+    display: flex;
+    margin: 0;
+
+}
+header nav ul li{
+    list-style: none;
+    color: white;
+}
+header nav ul li a{
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    transition: 0.3s ease-in-out;
+}
+header nav ul li a:hover{
+    cursor: pointer;
+    background-color: #dadada1c;
+    color: white;
+}
+header nav .dropdown-toggle::after{display: none !important;}
+header nav .nav-item .fa{margin-left: 5px;}
+
+
+header nav .dropdown-menu {
+    color: #eff2f5  !important;
+    background-color: #ffffff61 !important;
+}
+header nav .dropdown-menu li a{color: #000 !important; }
+
+header nav .head-icon{
+    height: auto;
+    display: flex;
+    padding: 0px 25px;
+}
+header nav .head-icon img{
+    margin-left: 10px;
+}
+header nav .head-icon img:hover{
+    cursor: pointer;
+}
+
+
+header .head-next{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    opacity: 0.5;
+}
+header .head-next img{
+    padding: 10px;
+}
+header .head-next:hover{
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+header .head-title{
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 10%;
+    top: 60%;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+    color: #E0A500;
+}
+header .head-title .see-more{
+    display: flex;
+}
+header .head-title .see-more h4{
+    padding: 20px;
+    color: white;
+    font-weight: 100;
+    margin: 0px 50px;
+}
+.navbar-toggler{
+    border: 1px solid #fff !important;
+}
+.navbar-toggler-icon{
+    background-color: white;
+    color: #bdb6b6;
+}
+
+
+header nav .dropdown-menu.show:last-child {
+    top: 100%;
+
+    margin-top: 0.125rem;
+    right: 0% !important;
+}
+/*******************************************************************************/
+/***************************  2 START ONLINE SECTION  **********************************/
+.online-section{
+    width: 100%;
+    /* height: 550px; */
+    background: url('../imgs/Texture.png') ;
+}
+.online-section .overly{
+    width: 100%;
+    height: 100%;
+    background: #000000ed;
+    margin: 0;
+    display: flex;
+
+}
+.online-section .overly .online-img{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 50px;
+}
+.online-section .overly .online-img img{
+    width: 200px;
+    height: 250px;
+}
+.online-section .overly .online-img .img-left{
+    position: absolute;
+    left: 20%;
+    top: 280px;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+}
+.online-section .overly .online-img .img-center {
+    position: absolute;
+    top: 140px;
+    width: 300px;
+    height: 250px;
+}
+.online-section .overly .online-img .img-right{
+    position: absolute;
+    right: 150px;
+    width: 200px;
+    height: 200px;
+}
+
+.online-section .overly .online-text{
+    width: 40%;
+    height: 100%;
+    padding: 50px;
+    color: white;
+}
+.online-section .overly .online-text .online-title{
+    color: #E0A500;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 58px;
+}
+.online-section .overly .online-text .online-sub-title{
+    font-size: 25px;
+    line-height: 36px;
+    font-family: 'Cairo';
+    color: #c5c5c5cf;
+}
+.online-section .overly .online-text ul{margin: 20px 0px ;}
+.online-section .overly .online-text ul li{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 23px;
+    line-height: 40px;
+    color: #f7f7f7b3;
+}
+.online-section .overly .online-text h5{
+    color: #f7f7f7b3;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+    line-height: 2;
+}
+.online-section .overly .online-text button{
+    background-color: #A07117;
+    padding: 10px 25px;
+    color: white;
+    font-family: 'Cairo';
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    border-radius: 3%;
+    border: none;
+}
+/***************************  2 END ONLINE SECTION  **********************************/
+/*******************************************************************************/
+
+
+/*******************************************************************************/
+/***************************  2 START CONTACT SECTION  **********************************/
+.Contact{
+    width: 100%;
+    background: url('../imgs/image\ 7.png');
+    background-size: cover;
+}
+.Contact .overly{
+    width: 100%;
+    height: 100%;
+    background: #000000b8;
+    margin: 0;
+    display: flex;
+}
+.Contact .overly .Contact-desc{
+    width: 40%;
+    height: 100%;
+    padding: 50px;
+    position: relative;
+    display: inline-block;
+}
+.Contact .overly .Contact-desc .desc-logo hr{
+    background-color: #97691B;
+    width: 25%;
+    height: 4px;
+}
+.Contact .overly .Contact-desc .desc-text{
+    color: #f7f7f7b3;
+    line-height: 1.6;
+    font-family: 'Cairo';
+    font-weight: 250;
+    font-size: 25px;
+    line-height: 30px;
+    width: 90%;
+}
+
+.Contact .overly .Contact-info{
+    width: 30%;
+    height: 100%;
+    padding: 50px 0px;
+}
+.Contact .overly .Contact-info h2{
+    font-family: 'Cairo';
+    color: white;
+    font-size: 20px;
+    margin: 40px 20px;
+}
+.Contact .overly .Contact-info .info-footer{
+    display: flex;
+}
+.Contact .overly .Contact-info .info-footer img{
+    height: 50px;
+    margin: 25px 2px;
+}
+
+.Contact .overly .Contact-sign{
+    width: 30%;
+    height: 100%;
+    padding: 100px 50px;
+    text-align: center;
+}
+.Contact .overly .Contact-sign h2{
+    color: white;
+    font-family: 'Cairo';
+    font-size: 20px;
+    margin: 40px auto;
+}
+.Contact .overly .Contact-sign input{
+    padding: 10px 20px;
+    background: #CECECE;
+    border-radius: 50px;
+    margin: 0px auto 30px;
+    width: 90%;
+}
+.Contact .overly .Contact-sign button{
+    padding: 10px 20px;
+    background: #A07117;
+    color: white;
+    border-radius: 50px;
+    margin: 0px auto 30px;
+    width: 50%;
+    border: none;
+}
+/***************************  3 END CONTACT SECTION  **********************************/
+/*******************************************************************************/
+
+/*******************************************************************************/
+/***************************  4 START REGISTER PAGE  **********************************/
+.register-page{
+    height: auto;
+    width: 100%;
+    margin: auto;
+    /*background-color: #f9f9f9;*/
+    background: url("../imgs/bg1.PNG");
+}
+
+.register-page h3{
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+
+}
+.register-page hr{
+    width: 100px;
+    height: 1px;
+    background-color: #ec5538;
+    margin: auto;
+    margin-top: 20px;
+    visibility: hidden
+}
+.Register-form:hover hr{visibility: visible}
+.Register-form:hover h3{
+    color: #ec5538;
+    -webkit-transition:all .4s ease-in-out;
+    -moz-transition:all .4s ease-in-out;
+    transition:all .4s ease-in-out;
+}
+.register-page form {
+    text-align: center;
+    height: auto;
+    padding: 25px 0px
+}
+.register-page form input{
+    padding: 5px 15px;
+    width: 60%;
+    margin: 25px 0px;
+    box-shadow: 10px 5px 50px 13px rgba(255,255,255,0.9), 10px 5px 20px 0 rgba(0,0,0,0.12)!important;
+    border: none;
+    height: 44px;
+    border-radius: 0%;
+    background: white;
+    border-bottom: 2px inset #68686da6;
+}
+.register-page .button-box{
+    width: 60%;
+    margin: 20px auto
+}
+
+.register-page .button-box button{
+    width: 145px;
+    background: none;
+    color: #1f1919;
+    height: 45px;
+    border: 1px solid;
+}
+.register-page .button-box button:hover{
+    background-color: #ec5538;
+    color: white;
+    border: 1px solid #fff;
+    -webkit-transition:all .4s ease-in-out;
+    -moz-transition:all .4s ease-in-out;
+    transition:all .4s ease-in-out;
+}
+.register-page .Register-form{
+    width: 50%;
+    background-color: white;
+    padding: 50px 20px 0px;
+    margin: auto;
+}
+/***************************  4 END REGISTER PAGE  **********************************/
+/*******************************************************************************/
+
+
+/**************************************************************************************************************/
+/**********************************         Responsive         *************************************************/
+/**************************************************************************************************************/
+
+@media (max-width: 575.98px) {
+
+    header nav ul li{margin: 5px;}
+    header nav ul li a { padding: 0px 15px; margin: 0px 10px;}
+    .navbar-toggler{position: absolute ; right: 0px; top: 20px;}
+    header nav .head-icon{margin: 0px 50px;}
+    .navbar-nav{background-color: #ffffff20;}
+
+    header .head-title{left: 5%;}
+
+    .online-section .overly{display: inline-block;}
+    .online-section .overly .online-img {width: 100%; height: 500px;}
+    .online-section .overly .online-text { width: 100%; height: auto; text-align: center;}
+    .online-section .overly .online-text ul li{list-style: none;}
+    .online-section .overly .online-text .online-sub-title {font-size: 20px; padding: 0px 10px;}
+
+    .online-section .overly .online-text {  padding: 50px 0px;}
+    .online-section .overly .online-img .img-right { right: 20px;}
+    .online-section .overly .online-img .img-left { left: 1%;}
+
+    .Contact .overly{display: inline-block;}
+    .Contact .overly .Contact-desc{ width: 100%; padding-bottom: 0px;}
+    .Contact .overly .Contact-info{ width: 100%; text-align: center; padding-bottom: 0px;}
+    .Contact .overly .Contact-sign{ width: 100%; padding: 0px;}
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    header nav ul li{margin: 5px;}
+    header nav ul li a { padding: 0px 15px; margin: 0px 10px;}
+
+    .online-section .overly{display: inline-block;}
+    .online-section .overly .online-img {width: 100%; height: 500px;}
+    .online-section .overly .online-text { width: 100%; height: auto; text-align: center;}
+    .online-section .overly .online-text ul li{list-style: none;}
+
+    .online-section .overly .online-text {  padding: 50px 0px;}
+    .online-section .overly .online-img .img-right { right: 20px;}
+    .online-section .overly .online-img .img-left { left: 1%;}
+
+    .Contact .overly{display: inline-block;}
+    .Contact .overly .Contact-desc{ width: 100%; padding-bottom: 0px;}
+    .Contact .overly .Contact-info{ width: 100%; text-align: center; padding-bottom: 0px;}
+    .Contact .overly .Contact-sign{ width: 100%; padding: 0px;}
+    .Contact .overly .Contact-info .info-footer { justify-content: center;}
+    .Contact .overly .Contact-sign input{width: 50%;}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    header nav ul li{margin: 5px;}
+    header nav ul li a { padding: 0px 15px; margin: 0px 10px;}
+
+    .online-section .overly .online-text .online-title{font-size: 40px;}
+    .online-section .overly .online-text .online-sub-title { font-size: 20px;}
+    .online-section .overly .online-text ul li {font-size: 20px;}
+
+    .online-section .overly .online-text {  padding: 50px 0px;}
+    .online-section .overly .online-img .img-right { right: 20px;}
+    .online-section .overly .online-img .img-left { left: 2%;}
+
+    .Contact .overly .Contact-desc{  padding: 10px;}
+    .Contact .overly .Contact-desc .desc-text{font-size: 20px;}
+
+    .Contact .overly .Contact-info{  padding: 0px;}
+    .Contact .overly .Contact-info h2{margin: 40px 0px; font-size: 15px;}
+    .Contact .overly .Contact-info .info-footer {display: inline-block;justify-content: center;}
+    .Contact .overly .Contact-info .info-footer h2{margin: 0;}
+    .Contact .overly .Contact-info .info-footer img{margin: 0;}
+
+    .Contact .overly .Contact-sign{  padding: 50px 0px;}
+    .Contact .overly .Contact-sign input{width: 100%;}
+    .Contact .overly .Contact-sign button{width: 80%;}
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px)  {
+
+    .online-section .overly .online-text {  padding: 50px 0px;}
+    .online-section .overly .online-img .img-right { right: 50px;}
+    .online-section .overly .online-img .img-left { left: 5%;}
+
+    .Contact .overly .Contact-info h2{margin: 40px 0px; font-size: 15px;}
+
+
+    .Contact .overly .Contact-sign{  padding: 50px 0px;}
+    .Contact .overly .Contact-sign input{width: 100%;}
+    .Contact .overly .Contact-sign button{width: 80%;}
+
+}
+
+@media (min-width: 1200px) and (min-width: 1399.98px) {
+ }
